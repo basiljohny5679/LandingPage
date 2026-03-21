@@ -1,0 +1,130 @@
+.hero-section {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1758270705518-b61b40527e76?w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 600px;
+    color: white;
+    padding: 3rem 0;
+    animation: fadeInUp 0.8s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.hero-title {
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #fcfdff;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #f97316;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #ea580c;
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #1e3a8a;
+}
+
+.wave-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    transform: rotate(180deg);
+    bottom: -2px;
+}
+
+.wave-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+     
+}
+
+.shape-fill {
+    fill: #FFFFFF;
+    ;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}

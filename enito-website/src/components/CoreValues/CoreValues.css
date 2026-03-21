@@ -1,0 +1,142 @@
+.core-values-section {
+    padding: 3rem 0;
+    background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+    position: relative;
+    overflow: hidden;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+
+.value-card {
+    position: relative;
+    padding: 3rem 2rem 2rem;
+    border-radius: 1.25rem;
+
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+
+    text-align: center;
+    transition: all 0.3s ease;
+    
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+   
+}
+
+.value-card:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.icon-box {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8rem;
+    z-index: 2;
+}
+
+
+
+
+
+.icon-orange {
+    background: linear-gradient(135deg, #fb923c, #f97316);
+    color: white;
+}
+
+.icon-blue {
+    background: linear-gradient(135deg, #60a5fa, #2563eb);
+    color: white;
+}
+
+.icon-teal {
+    background: linear-gradient(135deg, #2dd4bf, #0d9488);
+    color: white;
+}
+
+.value-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+}
+
+.value-desc {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.wave2-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    
+}
+.wave2-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+}
+
+.shape-fillss {
+    fill: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .value-card {
+        padding: 2.5rem;
+    }
+    
+
+   
+
+    /* Fade OUT */
+.fade-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+/* Fade IN */
+.fade-enter {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+}

@@ -1,0 +1,154 @@
+.why-choose-section {
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+.two-col-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 70%),
+                url('https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 28px;
+    padding: 2rem;
+}
+
+.left-content {
+    flex: 1.2;
+    padding: 1rem;
+}
+
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #0A2540;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(2px);
+    padding: 0.6rem 1rem;
+    border-radius: 60px;
+    transition: all 0.2s;
+}
+
+.feature-item:hover {
+    transform: translateX(5px);
+    background: white;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+}
+
+.check {
+    font-size: 1.2rem;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.check.blue {
+    background: #EFF4FF;
+    color: #2A73FF;
+}
+
+.check.orange {
+    background: #FFF1E6;
+    color: #F97316;
+}
+
+.feature-item p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.right-image {
+    flex: 0.9;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-card {
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.2);
+    max-width: 380px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.image-card:hover {
+    transform: scale(1.02);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 28px;
+    object-fit: cover;
+}
+
+.wave3-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.wave3-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 46px;
+}
+
+.shape-fils {
+    fill: #8b2b2b;
+}
+
+@media (max-width: 768px) {
+    .two-col-container {
+        flex-direction: column;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 100%),
+                    url('https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        padding: 1.5rem;
+    }
+    
+    .left-content {
+        padding: 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .right-image {
+        justify-content: center;
+        padding: 1rem 0 0;
+    }
+    
+    .section-heading {
+        font-size: 2rem;
+    }
+}
