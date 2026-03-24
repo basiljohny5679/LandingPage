@@ -40,10 +40,14 @@ const Courses: React.FC = () => {
               <div className="course-content">
                 <h3 className="course-title">{course.title}</h3>
                 <p className="course-desc">{course.description}</p>
+                <button className="course-btn">
+    Explore Course
+  </button>
               </div>
             </div>
           ))}
         </div>
+        
       </div>
     </section>
   );

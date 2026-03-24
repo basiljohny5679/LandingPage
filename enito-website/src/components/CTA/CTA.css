@@ -5,6 +5,7 @@
     text-align: center;
     overflow: hidden;
     isolation: isolate;
+    
 }
 
 .cta-section::before {
@@ -135,6 +136,33 @@
     background: #1DA1F2;
     box-shadow: 0 6px 14px rgba(29,161,242,0.3);
 }
+
+.wave8-divider {
+       position: absolute;
+    top: 0;            
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+    
+}
+
+.wave8-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+     
+     
+}
+
+.shape-filed {
+    fill:  #f9fafb;
+    ;
+}
+
+
 
 @media (max-width: 600px) {
     .cta-section {

@@ -18,7 +18,7 @@ body {
     padding: 0 1.5rem;
 }
 section  {
-    margin-top: -.5px; /* 👈 removes tiny gaps */
+    margin-top: -1px; /* 👈 removes tiny gaps */
 }
 .section-title {
     font-size: 2.5rem;

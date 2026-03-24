@@ -23,6 +23,22 @@ const HowItWorks: React.FC = () => {
             </div>
           ))}
         </div>
+        <div className="whatsapp-card">
+  <div className="whatsapp-content">
+    <h3>Join Our WhatsApp Community</h3>
+    <p>Get updates, practice tips, and connect with learners daily.</p>
+
+    <a
+      href="https://wa.me/919544830199"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="whatsapp-btn"
+    >
+      <span className="icon">💬</span>
+      Join Now
+    </a>
+  </div>
+</div>
       </div>
     </section>
   );
