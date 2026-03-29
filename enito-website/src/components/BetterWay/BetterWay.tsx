@@ -9,8 +9,7 @@ const BetterWay: React.FC = () => {
           <div className="content-col">
             <h2 className="section-heading">A Better Way to Learn English</h2>
             <p className="section-text">
-              ENITO helps you speak English with ease in everyday situations. 
-              Practical lessons, supportive guidance, and real confidence-building.
+              At ENITO, we help you learn English naturally and build confidence through practical lessons, friendly guidance, and real-life conversations.
             </p>
           </div>
           <div className="image-col">

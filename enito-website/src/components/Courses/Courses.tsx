@@ -20,7 +20,7 @@ const Courses: React.FC = () => {
     {
       id: "basic-english",
       title: "Basic English",
-      description: "Start your English journey",
+      description: "Fundamentals of English",
       image: "https://images.unsplash.com/photo-1758270704524-596810e891b5?w=400&q=80",
       fullDescription: "Learn the fundamentals of English language including grammar, vocabulary, and basic conversation skills. Perfect for beginners who want to build a strong foundation.",
       duration: "8 weeks",
@@ -30,7 +30,7 @@ const Courses: React.FC = () => {
     {
       id: "daily-communication",
       title: "Daily Communication",
-      description: "Enhance your fluency",
+      description: "Practical English for Daily Use",
       image: "https://images.unsplash.com/photo-1758270705087-76e81a5117bd?w=400&q=80",
       fullDescription: "Master everyday English conversations for various situations. Improve your speaking and listening skills for real-world interactions.",
       duration: "6 weeks",
@@ -38,8 +38,8 @@ const Courses: React.FC = () => {
       topics: ["Shopping & Dining", "Travel & Tourism", "Social Interactions", "Telephone Conversations", "Email Writing"]
     },
     {
-      id: "interview-preparation",
-      title: "Interview Preparation",
+      id: "interview-cracker",
+      title: "Interview Cracker",
       description: "Excel in job interviews",
       image: "https://images.unsplash.com/photo-1770364019741-3518f4f05513?w=400&q=80",
       fullDescription: "Prepare for job interviews with confidence. Learn common interview questions, professional vocabulary, and effective communication strategies.",
@@ -54,7 +54,7 @@ const Courses: React.FC = () => {
   };
 
   return (
-    <section className="courses-section">
+    <section id="courses" className="courses-section">
       <div className="container">
         <h2 className="section-title">Our Courses</h2>
         <div className="courses-grid">

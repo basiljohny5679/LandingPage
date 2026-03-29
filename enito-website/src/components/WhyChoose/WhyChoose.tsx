@@ -3,13 +3,14 @@ import './WhyChoose.css';
 
 const WhyChoose: React.FC = () => {
   const features = [
-    { text: "One-to-One Personal Attention", color: "blue" },
-    { text: "Beginner Friendly Teaching", color: "orange" },
-    { text: "Real Conversation Practice", color: "blue" },
-    { text: "Supportive Learning Environment", color: "orange" },
-    { text: "Flexible Scheduling Options", color: "blue" },
-    { text: "Confidence Building Approach", color: "orange" }
+    { text: "Personalized Attention", color: "blue" },
+    { text: " Easy for Beginners", color: "orange" },
+    { text: "Confidence-Focused Learning", color: "blue" },
+    { text: "Real-Life Conversation Practice", color: "orange" },
+    { text: "Supportive Learning Environment", color: "blue" },
+    { text: "Flexible Scheduling", color: "orange" }
   ];
+
 
   return (
     <section className="why-choose-section">

@@ -102,9 +102,9 @@ const BasicEnglish: React.FC = () => {
               <span className="material-symbols-outlined">chat</span>
               Daily English
             </Link>
-             <Link to="/course/interview-preparation" className="nav-item" onClick={closeSideNav}>
+             <Link to="/course/interview-cracker" className="nav-item" onClick={closeSideNav}>
               <span className="material-symbols-outlined">record_voice_over</span>
-              Interview Preparation
+              Interview Cracker
             </Link>
           </div>
         </aside>
@@ -217,42 +217,42 @@ This course builds a strong foundation and prepares learners to move confidently
                 <div className="topic-icon-wrapper">
                   <span className="material-symbols-outlined">abc</span>
                 </div>
-                <h4 className="topic-title">Foundational Phonetics</h4>
+                <h4 className="topic-title"> Basic English Words </h4>
                 <p className="topic-description">Master the English alphabet and the essential sounds that form the basis of clear pronunciation.</p>
               </div>
               <div className="topic-card">
                 <div className="topic-icon-wrapper">
                   <span className="material-symbols-outlined">edit</span>
                 </div>
-                <h4 className="topic-title">Primary Grammar Hooks</h4>
+                <h4 className="topic-title">Games on Grammar</h4>
                 <p className="topic-description">Understanding the 'To Be' verb, basic sentence structures, and present simple tense.</p>
               </div>
               <div className="topic-card">
                 <div className="topic-icon-wrapper">
                   <span className="material-symbols-outlined">person</span>
                 </div>
-                <h4 className="topic-title">Personal Identification</h4>
+                <h4 className="topic-title"> Expressions and Idioms</h4>
                 <p className="topic-description">How to introduce yourself, describe your background, and share personal interests elegantly.</p>
               </div>
               <div className="topic-card">
                 <div className="topic-icon-wrapper">
                   <span className="material-symbols-outlined">schedule</span>
                 </div>
-                <h4 className="topic-title">Daily Architecture</h4>
+                <h4 className="topic-title">Conversational English</h4>
                 <p className="topic-description">Vocabulary for time, days, and common daily routines to navigate everyday life.</p>
               </div>
               <div className="topic-card">
                 <div className="topic-icon-wrapper">
                   <span className="material-symbols-outlined">shopping_basket</span>
                 </div>
-                <h4 className="topic-title">Essential Interactions</h4>
+                <h4 className="topic-title">Games and Expressions</h4>
                 <p className="topic-description">Navigating markets, cafes, and transportation with confidence and courtesy.</p>
               </div>
               <div className="topic-card">
                 <div className="topic-icon-wrapper">
                   <span className="material-symbols-outlined">explore</span>
                 </div>
-                <h4 className="topic-title">Spatial Navigation</h4>
+                <h4 className="topic-title">Communicative English</h4>
                 <p className="topic-description">Prepositions of place and giving/receiving basic directions in a city environment.</p>
               </div>
             </div>

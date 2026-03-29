@@ -24,11 +24,19 @@ const Hero: React.FC = () => {
             Where English<br />Meets Confidence
           </h1>
           <p className="hero-subtitle">
-            Learn to speak English fluently and fearlessly
+            Learn to speak English fluently and confidently
           </p>
           
           <div className="button-group">
-            <button className="btn btn-outline">View Courses</button>
+         <button 
+  className="btn btn-outline"
+  onClick={() => {
+    const section = document.getElementById('courses');
+    section?.scrollIntoView({ behavior: 'smooth' });
+  }}
+>
+  View Courses
+</button>
           </div>
         </div>
         <div className="wave-divider">

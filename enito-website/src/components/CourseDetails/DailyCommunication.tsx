@@ -98,9 +98,9 @@ const DailyCommunication: React.FC = () => {
               <span className="material-symbols-outlined">chat</span>
               Daily English
             </Link>
-              <Link to="/course/interview-preparation" className="nav-item" onClick={closeSideNav}>
+              <Link to="/course/interview-cracker" className="nav-item" onClick={closeSideNav}>
               <span className="material-symbols-outlined">record_voice_over</span>
-              Interview Preparation
+              Interview Cracker
             </Link>
           </div>
         </aside>
