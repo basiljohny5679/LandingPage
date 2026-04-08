@@ -34,7 +34,7 @@ function App() {
                 <HowItWorks />
                 <Testimonials />
                 <CTA />
-                <Footer />
+                {/* <Footer /> */}
               </>
             }
           />

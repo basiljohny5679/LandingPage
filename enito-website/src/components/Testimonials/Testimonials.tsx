@@ -11,38 +11,38 @@ interface Testimonial {
 const Testimonials: React.FC = () => {
   const testimonials: Testimonial[] = [
     {
-      name: "Rahul S.",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80",
+      name: "Akhil S.",
+      avatar: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
       quote: "ENITO boosted my speaking confidence. Great experience!",
       stars: 5
     },
     {
-      name: "Ananya R.",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
+      name: "Vishnu R.",
+      avatar: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
       quote: "The one-to-one coaching was exactly what I needed!",
       stars: 5
     },
     {
-      name: "Vikram M.",
-      avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100&q=80",
+      name: "Jithin M.",
+      avatar: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
       quote: "Finally confident in client meetings. Thank you ENITO!",
       stars: 5
     },
     {
-      name: "Priya K.",
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&q=80",
+      name: "Amal K.",
+      avatar: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
       quote: "From shy to speaking fluently in just 3 months!",
       stars: 5
     },
     {
-      name: "Arjun N.",
-      avatar: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&q=80",
+      name: "Mubashira N.",
+      avatar: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
       quote: "The personalized sessions made all the difference!",
       stars: 5
     },
     {
-      name: "Neha S.",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80",
+      name: "Vignesh S.",
+      avatar: "https://www.pngall.com/wp-content/uploads/5/Profile-PNG-File.png",
       quote: "Cracked my job interview thanks to ENITO's training!",
       stars: 5
     }

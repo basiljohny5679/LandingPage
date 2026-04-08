@@ -1,6 +1,6 @@
 import React from 'react';
 import './WhyChoose.css';
-
+import Photo from '../../assets/WhyChoose.jpeg';
 const WhyChoose: React.FC = () => {
   const features = [
     { text: "Personalized Attention", color: "blue" },
@@ -30,7 +30,7 @@ const WhyChoose: React.FC = () => {
           <div className="right-image">
             <div className="image-card">
               <img 
-                src="https://images.pexels.com/photos/7092529/pexels-photo-7092529.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&dpr=2"
+                src={Photo}
                 alt="ENITO learning"
               />
             </div>

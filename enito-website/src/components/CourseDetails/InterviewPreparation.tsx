@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/Logo1.png';
+import Interview from '../../assets/Interview.jpeg';  
 import './InterviewPreparation.css';
+import Logo2 from '../../assets/Interviewcracker.png';
 import { Phone, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 const InterviewPreparation: React.FC = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
@@ -159,7 +161,7 @@ const InterviewPreparation: React.FC = () => {
               <div className="hero-image-wrapper">
                 <div className="hero-image-card">
                   <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKnTt7l85kDXhB3eduD5qDOMLrR-kd_rMhKRs5wVEOaQ66rri84nquiPq_85yaDtyiYuBfWSqUivLW3lhVpQfUyQlvBU1rGmXCAMn3Ikq2ni0ZIeOs14t0gLUmuw1UhQNiLGOlJoknB7K4HiMNFydJru5SYUXrCaFe_zfk4APfQCTT_10q2UOteV3LvNejSGNrgGYV0LqiVdeaHXiVR8n6BRy7SSNixiHjWKuTjV9jtxZw9krIlNd_yjuyClUXDjI9UfgpagU9hg0" 
+                    src={Logo2} 
                     alt="Professional woman in a confident interview setting" 
                     className="hero-image"
                   />
@@ -177,10 +179,9 @@ const InterviewPreparation: React.FC = () => {
             <div className="overview-card">
               <h2 className="section-title">Course Overview</h2>
               <p className="overview-text">
-                English to Crack Any Interview is an intensive one-to-one crash course designed for job seekers who struggle to perform confidently in interviews despite having the required skills.
-The course focuses on interview-specific English, professional communication, and confident self-presentation.
-Learners are guided through practical strategies to handle interview conversations, answer questions clearly, and manage pressure effectively.
-This program is structured to deliver quick, visible improvement in confidence and interview communication within a short time.
+               Interview Cracker is a focused spoken English course designed for job seekers who want to perform confidently in interviews. The course is available in both one to one and group sessions, offering flexibility based on your learning preference.
+It focuses on interview specific English, professional communication, and confident self presentation. Through practical guidance and real interview practice, learners are trained to answer questions clearly, handle conversations smoothly, and manage pressure with confidence.
+This program is designed to bring noticeable improvement in a short time, helping you approach interviews with clarity, confidence, and readiness.
               </p>
               <div className="stats-group">
                 <div className="stat">
@@ -194,8 +195,12 @@ This program is structured to deliver quick, visible improvement in confidence a
               </div>
             </div>
             <div className="audience-card">
-              <h3 className="audience-title">Who This Is For</h3>
+              <h3 className="audience-title">Who Should Enroll</h3>
               <ul className="audience-list">
+                  <li>
+                  <span className="material-symbols-outlined">check_circle</span>
+                  <span>Freshers and working professionals preparing for interviews</span>
+                </li>
                 <li>
                   <span className="material-symbols-outlined">check_circle</span>
                   <span>Job seekers who feel nervous or underconfident during interviews
@@ -205,10 +210,7 @@ This program is structured to deliver quick, visible improvement in confidence a
                   <span className="material-symbols-outlined">check_circle</span>
                   <span>Candidates who struggle to express their skills and experience in English</span>
                 </li>
-                <li>
-                  <span className="material-symbols-outlined">check_circle</span>
-                  <span>Freshers and working professionals preparing for interviews</span>
-                </li>
+              
                   <li>
                   <span className="material-symbols-outlined">check_circle</span>
                   <span>Anyone who wants to improve interview communication in a short time</span>
@@ -265,15 +267,19 @@ This program is structured to deliver quick, visible improvement in confidence a
                 <span className="outcome-premium-badge">The Final Goal</span>
                 <h2 className="outcome-premium-title">Learners will be able to attend interviews with confidence and clarity.</h2>
                 <p className="outcome-premium-description">
-                 They will communicate their skills, experience, and strengths effectively while responding to questions with structure and precision.
-Through personalised practice and a final mock interview, learners will reduce anxiety, handle pressure calmly, and present themselves professionally, significantly improving their chances of success in interviews.
+                By the end of the course, you will be able to communicate your skills, experience, and strengths clearly and confidently. You will learn to answer interview questions in a structured and effective way, handle pressure calmly, and present yourself professionally. Through guided practice and mock interviews, you will build confidence and position yourself for success in interviews.
                   {/* Communicate your skills, experience, and strengths effectively while responding to complex questions with structure and precision. Walk out of your next interview knowing you've represented your best self. */}
                 </p>
               </div>
               <div className="certification-card">
-                <span className="material-symbols-outlined certification-icon">verified</span>
+                {/* <span className="material-symbols-outlined certification-icon">verified</span>
                 <h4 className="certification-title">Certification</h4>
-                <p className="certification-text">Professional English Mastery Certificate awarded upon completion.</p>
+                <p className="certification-text">Professional English Mastery Certificate awarded upon completion.</p> */}
+                 <img 
+              src={Interview} 
+              alt="ENITO Logo" 
+              className="Final-img"
+            />
               </div>
             </div>
           </section>

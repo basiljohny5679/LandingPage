@@ -5,12 +5,6 @@ import './CTA.css';
 const CTA: React.FC = () => {
   const socialLinks = [
     {
-      name: "WhatsApp",
-      url: "https://wa.me/919544830199?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English",
-      icon: <MessageCircle size={22} />,
-      class: "whatsapp"
-    },
-    {
       name: "Instagram",
       url: "https://instagram.com/enito",
       icon: <Instagram size={22} />,
@@ -30,39 +24,73 @@ const CTA: React.FC = () => {
     }
   ];
 
+  const phoneNumber = "+919544830199";
+  const whatsappNumber = "919544830199";
+
   return (
     <section className="cta-section">
-       <div className="wave8-divider">
-          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-filed"></path>
-          </svg>
-        </div>
+      <div className="wave8-divider">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-filed"></path>
+        </svg>
+      </div>
+      
       <div className="container">
         <h2 className="cta-title">Start Your English Journey Today</h2>
         
-        <div className="contact-social-wrapper">
-          <div className="company-info">
-            <span className="company-name">ENITO</span>
-            <span className="mobile-number">
-              <Phone size={16} />
-              +91 9544830199
-            </span>
+        {/* Three sections wrapper */}
+        <div className="three-sections-wrapper">
+          {/* Section 1: Contact Us */}
+          <div className="section section-left">
+            <div className="company-info">
+              <span className="company-name">Contact Us</span>
+              <div className="contact-methods">
+                <a href={`tel:${phoneNumber}`} className="contact-method">
+                  <Phone size={16} />
+                  +91 9544830199
+                </a>
+                <a 
+                  href={`https://wa.me/${whatsappNumber}?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English`} 
+                  className="contact-method whatsapp-contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle size={16} />
+                  WhatsApp
+                </a>
+              </div>
+            </div>
           </div>
           
-          <div className="contact-icons">
-            {socialLinks.map((social, idx) => (
-              <a
-                key={idx}
-                href={social.url}
-                className={`contact-icon ${social.class}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Contact via ${social.name}`}
-              >
-                {social.icon}
-                <span>{social.name}</span>
-              </a>
-            ))}
+          {/* Section 2: Social Media */}
+          <div className="section section-center">
+            <div className="social-section">
+              <h3 className="social-heading">Follow Us</h3>
+              <div className="contact-icons">
+                {socialLinks.map((social, idx) => (
+                  <a
+                    key={idx}
+                    href={social.url}
+                    className={`contact-icon ${social.class}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Follow us on ${social.name}`}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          {/* Section 3: Terms & Conditions Links */}
+          <div className="section section-right">
+            <div className="footer-links">
+              <a href="/terms" className="footer-link">Terms & Conditions</a>
+              <a href="/privacy" className="footer-link">Privacy Policy</a>
+             
+              <a href="/faq" className="footer-link">FAQ</a>
+            </div>
           </div>
         </div>
       </div>

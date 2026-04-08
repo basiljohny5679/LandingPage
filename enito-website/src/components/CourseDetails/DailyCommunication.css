@@ -479,6 +479,7 @@
   border: 1px solid rgba(0, 0, 0, 0.05);
   width: 100%;
   max-width: 288px;
+  padding-top: 3.5rem;
 }
 
 @media (max-width: 768px) {
@@ -1178,7 +1179,7 @@
 }
 
 /* Footer */
-.daily-communication-page .course-footer {
+/* .daily-communication-page .course-footer {
   background: #f0ede9;
   padding: 2rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -1279,7 +1280,185 @@
 
 .daily-communication-page .footer-links a:hover {
   color: #4A90E2;
+} */
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.daily-communication-page .course-footer {
+  background: #eef2f4;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  width: 100%;
+  margin-left: 0;
 }
+
+/* Align with sidebar (desktop) */
+@media (min-width: 1024px) {
+  .daily-communication-page .course-footer {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+  }
+}
+
+@media (min-width: 768px) {
+  .daily-communication-page .course-footer {
+    padding: 2.5rem 0;
+  }
+}
+
+/* Footer Container */
+.daily-communication-page .footer-content {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3rem;
+  text-align: center;
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .daily-communication-page .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+/* =========================
+   LEFT SECTION
+========================= */
+
+.daily-communication-page .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.daily-communication-page .footer-logo {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #2d3335;
+   margin-left: 30px;
+}
+
+.daily-communication-page .footer-copyright {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #5a6062;
+  margin-left: 30px;
+}
+
+/* Phone */
+.daily-communication-page .footer-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  color: #5a6062;
+  margin-left: 30px;
+}
+
+/* =========================
+   SOCIAL ICONS (CENTER)
+========================= */
+
+.daily-communication-page .footer-social {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon Base */
+.daily-communication-page .social-icon {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.05);
+  color: #2d3335;
+  transition: all 0.3s ease;
+}
+
+/* Hover lift */
+.daily-communication-page .social-icon:hover {
+  transform: translateY(-3px);
+}
+
+/* Brand Hover Colors */
+.daily-communication-page .social-icon.whatsapp:hover {
+  background: #25D366;
+  color: white;
+}
+
+.daily-communication-page .social-icon.instagram:hover {
+  background: linear-gradient(135deg, #833AB4, #E4405F, #F56040);
+  color: white;
+}
+
+.daily-communication-page .social-icon.facebook:hover {
+  background: #1877F2;
+  color: white;
+}
+
+.daily-communication-page .social-icon.twitter:hover {
+  background: #1DA1F2;
+  color: white;
+}
+
+/* =========================
+   RIGHT LINKS
+========================= */
+
+.daily-communication-page .footer-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .daily-communication-page .footer-links {
+    gap: 1.5rem;
+  }
+}
+
+.daily-communication-page .footer-links a {
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #5a6062;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.daily-communication-page .footer-links a:hover {
+  color: #005bc1;
+}
+
+/* =========================
+   MOBILE FIX
+========================= */
+
+@media (max-width: 768px) {
+  .daily-communication-page .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
 
 /* Animation for cards */
 @keyframes fadeInUp {

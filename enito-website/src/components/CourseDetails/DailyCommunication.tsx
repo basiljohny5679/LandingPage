@@ -2,10 +2,38 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/Logo1.png';
 import './DailyCommunication.css';
+import { Phone, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 
 const DailyCommunication: React.FC = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+   const socialLinks = [
+      {
+        name: "WhatsApp",
+        url: "https://wa.me/919544830199?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English",
+        icon: <MessageCircle size={22} />,
+        class: "whatsapp"
+      },
+      {
+        name: "Instagram",
+        url: "https://instagram.com/enito",
+        icon: <Instagram size={22} />,
+        class: "instagram"
+      },
+      {
+        name: "Facebook",
+        url: "https://facebook.com/enito",
+        icon: <Facebook size={22} />,
+        class: "facebook"
+      },
+      {
+        name: "Twitter",
+        url: "https://twitter.com/enito",
+        icon: <Twitter size={22} />,
+        class: "twitter"
+      }
+    ];
+  
 
   const navigate = useNavigate();
 
@@ -59,7 +87,7 @@ const DailyCommunication: React.FC = () => {
           {/* Desktop Navigation Links */}
           <div className="nav-links">
             <button className="nav-link-btn">Daily Communication</button>
-            <button className="nav-link-btn">8 Weeks</button>
+            <button className="nav-link-btn">30 Days</button>
             <button className="nav-link-begin" onClick={handleBeginJourney}>Begin Journey →</button>
           </div>
           
@@ -116,13 +144,13 @@ const DailyCommunication: React.FC = () => {
                 <span className="highlight">ENGLISH</span>
               </h1>
               <p className="course-description">
-                Master everyday English conversations for real-world situations. Build confidence through practical, scenario-based learning that transforms your daily interactions.
+               Learn to communicate effectively in everyday situations through practical conversations. Build your confidence and improve your fluency with simple real life learning.
               </p>
             </div>
             <div className="info-card">
               <div className="info-item">
                 <div className="info-label">Duration</div>
-                <div className="info-value">8 Weeks</div>
+                <div className="info-value">30 Days</div>
               </div>
               <div className="info-item">
                 <div className="info-label">Format</div>
@@ -141,16 +169,15 @@ const DailyCommunication: React.FC = () => {
             <div className="overview-text">
               <h2 className="section-title">Course Overview</h2>
               <p className="overview-description">
-                Daily English is a personalised one-to-one spoken English course designed for learners who want to use English confidently in everyday life.
-The course focuses on practical words, natural phrases, and real conversations, while gently removing fear, hesitation, and self-doubt.
+                Daily English is a personalised spoken English course designed for learners who want to communicate confidently in everyday life. The course focuses on practical words, natural phrases, and real conversations, helping you gradually overcome fear, hesitation, and self doubt.
+
               </p>
               <p className="overview-description">
-               This is not a grammar-heavy course.
-It is a confidence-first, usage-based program that helps learners think, speak, and respond in English naturally.
+              This is not a grammar heavy course. It is a confidence first, usage based program that enables you to think, speak, and respond in English with ease and clarity.
               </p>
             </div>
             <div className="who-for-card">
-              <h3 className="who-for-title">Who This Course Is For</h3>
+              <h3 className="who-for-title">Who Should Enroll</h3>
               <ul className="who-for-list">
                 <li>
                   <span className="material-symbols-outlined">circle</span>
@@ -207,85 +234,108 @@ It is a confidence-first, usage-based program that helps learners think, speak, 
 
           {/* Topics Covered */}
           <section className="topics-section">
-            <h2 className="section-title">Topics Covered</h2>
-            <div className="topics-grid">
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">record_voice_over</span>
-                </div>
-                <h4 className="topic-title"> English Vocabularies and Synonyms</h4>
-                <p className="topic-description">Develop natural flow in everyday conversations with native-like expressions and responses.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">handshake</span>
-                </div>
-                <h4 className="topic-title">Games on Grammar</h4>
-                <p className="topic-description">Master polite expressions, cultural nuances, and appropriate responses in various social settings.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">work</span>
-                </div>
-                <h4 className="topic-title">Expressions and Idioms</h4>
-                <p className="topic-description">Learn workplace vocabulary, email writing, and professional phone conversation skills.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">chat</span>
-                </div>
-                <h4 className="topic-title"> Conversational English</h4>
-                <p className="topic-description">Navigate social media, messaging apps, and online communication platforms effectively.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">flight</span>
-                </div>
-                <h4 className="topic-title"> Games and Detours</h4>
-                <p className="topic-description">Essential phrases for hotels, airports, restaurants, and tourist interactions worldwide.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">language</span>
-                </div>
-                <h4 className="topic-title">Psychology of English</h4>
-                <p className="topic-description">Understand idioms, slang, and cultural references used in native English conversations.</p>
-              </div>
-               <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">language</span>
-                </div>
-                <h4 className="topic-title"> Introduction to Literature</h4>
-                <p className="topic-description">Understand idioms, slang, and cultural references used in native English conversations.</p>
-              </div>
-               <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">language</span>
-                </div>
-                <h4 className="topic-title">Communicative English</h4>
-                <p className="topic-description">Understand idioms, slang, and cultural references used in native English conversations.</p>
-              </div>
-            </div>
-          </section>
+  <h2 className="section-title">Topics Covered</h2>
+  <div className="topics-grid">
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">menu_book</span>
+      </div>
+      <h4 className="topic-title">English Vocabularies and Synonyms</h4>
+      <p className="topic-description">
+        Learn a variety of words and their synonyms to improve your understanding in English
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">sports_esports</span>
+      </div>
+      <h4 className="topic-title">Games on Grammar</h4>
+      <p className="topic-description">
+        Build your grammar skills through interactive games designed to make learning simple and effective
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">auto_awesome</span>
+      </div>
+      <h4 className="topic-title">Expressions and Idioms</h4>
+      <p className="topic-description">
+        Enhance your communication with simple expressions and idioms that make your English more engaging.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">forum</span>
+      </div>
+      <h4 className="topic-title">Conversational English</h4>
+      <p className="topic-description">
+        Practice real life conversations to communicate naturally and confidently in daily situations.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">celebration</span>
+      </div>
+      <h4 className="topic-title">Games and Detours</h4>
+      <p className="topic-description">
+        Improve your fluency through fun games and creative activities that make learning engaging and enjoyable.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">psychology</span>
+      </div>
+      <h4 className="topic-title">Psychology of English</h4>
+      <p className="topic-description">
+        Understand the mindset behind learning English and build the confidence to think, speak, and respond naturally.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">auto_stories</span>
+      </div>
+      <h4 className="topic-title">Introduction to Literature</h4>
+      <p className="topic-description">
+        Explore the foundations of English literature and how it has shaped the language.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">record_voice_over</span>
+      </div>
+      <h4 className="topic-title">Communicative English</h4>
+      <p className="topic-description">
+        Develop the ability to communicate clearly and confidently in everyday situations.
+      </p>
+    </div>
+  </div>
+</section>
 
           {/* Course Outcome */}
           <section className="outcome-section">
             <div className="outcome-wrapper">
               <div className="outcome-content">
                 <div className="outcome-text">
-                  <h2 className="outcome-title">The Outcome</h2>
+                  <h2 className="outcome-title">THE FINAL GOAL </h2>
                   <p className="outcome-description">
-                    Graduates of this course will navigate daily English interactions with confidence and cultural awareness. You'll be able to engage in meaningful conversations, express opinions clearly, and adapt your communication style to various social and professional contexts.
+                  Upon completion, you will have the confidence to handle daily interactions, take part in meaningful conversations, and communicate effectively in various situations.
                   </p>
                   <div className="outcome-badges">
-                    <div className="badge">
+                    {/* <div className="badge">
                       <span className="material-symbols-outlined">verified</span>
                       <span>CEFR B1 Level</span>
                     </div>
                     <div className="badge">
                       <span className="material-symbols-outlined">verified</span>
                       <span>Communication Certificate</span>
-                    </div>
+                    </div> */}
                     <div className="badge">
                       <span className="material-symbols-outlined">verified</span>
                       <span>Real-World Ready</span>
@@ -304,15 +354,67 @@ It is a confidence-first, usage-based program that helps learners think, speak, 
       {/* Footer */}
       <footer className="course-footer">
         <div className="footer-content">
-          <div>
+      
+          {/* LEFT SIDE */}
+          <div className="footer-left">
             <div className="footer-logo">Linguist Editorial</div>
-            <p className="footer-copyright">© 2024 Linguist Editorial. Focus on Fluency.</p>
+            <p className="footer-copyright">
+              © 2024 Linguist Editorial. Focus on Fluency.
+            </p>
+      
+            {/* 📞 Phone */}
+            <div className="footer-contact">
+              <Phone size={16} />
+              <span>+91 9544830199</span>
+            </div>
           </div>
+      
+          {/* CENTER - SOCIAL */}
+          <div className="footer-social">
+            <a
+              href="https://wa.me/919544830199"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon whatsapp"
+            >
+              <MessageCircle size={18} />
+            </a>
+      
+            <a
+              href="https://instagram.com/enito"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon instagram"
+            >
+              <Instagram size={18} />
+            </a>
+      
+            <a
+              href="https://facebook.com/enito"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon facebook"
+            >
+              <Facebook size={18} />
+            </a>
+      
+            <a
+              href="https://twitter.com/enito"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon twitter"
+            >
+              <Twitter size={18} />
+            </a>
+          </div>
+      
+          {/* RIGHT SIDE */}
           <div className="footer-links">
             <a href="#">Academic Integrity</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Excellence</a>
           </div>
+      
         </div>
       </footer>
     </div>

@@ -610,10 +610,14 @@
 }
 
 .interview-preparation-page .audience-card {
-  background: #3d89ff;
+  background: #f9f9fa;
   padding: 2rem;
   border-radius: 1rem;
-  color: #000410;
+  border: 2px solid #005bc1;
+  color: #000000;
+  
+
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
@@ -759,6 +763,14 @@
   margin-bottom: 3rem;
 }
 
+.interview-preparation-page .Final-img {
+  width: 380px;
+  height: 200px;
+  border-radius: 1rem;
+ 
+  /* margin-top: 2rem; */
+}
+
 @media (max-width: 768px) {
   .interview-preparation-page .outcome-premium {
     padding: 2rem;
@@ -838,19 +850,19 @@
 }
 
 .interview-preparation-page .certification-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
-  padding: 2rem;
+  /* background: rgba(255, 255, 255, 0.05); */
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  /* border-radius: 1rem; */
+  /* padding: 2rem; */
   text-align: center;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .interview-preparation-page .certification-card {
     padding: 1.5rem;
   }
-}
+} */
 
 .interview-preparation-page .certification-icon {
   font-size: 3rem;
@@ -946,6 +958,7 @@
   font-size: 1.125rem;
   font-weight: 800;
   color: #2d3335;
+   margin-left: 30px;
 }
 
 .interview-preparation-page .footer-copyright {

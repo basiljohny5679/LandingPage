@@ -2,10 +2,38 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/Logo1.png';
 import './BasicEnglish.css';
+import { Phone, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 
 const BasicEnglish: React.FC = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+   const socialLinks = [
+    {
+      name: "WhatsApp",
+      url: "https://wa.me/919544830199?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English",
+      icon: <MessageCircle size={22} />,
+      class: "whatsapp"
+    },
+    {
+      name: "Instagram",
+      url: "https://instagram.com/enito",
+      icon: <Instagram size={22} />,
+      class: "instagram"
+    },
+    {
+      name: "Facebook",
+      url: "https://facebook.com/enito",
+      icon: <Facebook size={22} />,
+      class: "facebook"
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/enito",
+      icon: <Twitter size={22} />,
+      class: "twitter"
+    }
+  ];
+
 
   const navigate = useNavigate();
 
@@ -145,32 +173,33 @@ const BasicEnglish: React.FC = () => {
             <div className="overview-text">
               <h2 className="section-title">Course Overview</h2>
               <p className="overview-description">
-                Basic English is a focused one-to-one spoken English course designed for learners who are at the very beginning of their English-speaking journey.
-The course introduces essential English words, simple phrases, and basic sentence patterns used in everyday communication.
+              Basic English is a dynamic spoken English course designed for beginners who are just starting their English-speaking journey. Offered in both one-to-one and group formats, the course provides the flexibility to learn in a way that best suits your comfort and learning style.
               </p>
+                <p className="overview-description">
+              Through carefully designed lessons, learners are introduced to essential vocabulary, everyday phrases, and simple sentence structures that can be used in real-life situations. The course goes beyond traditional learning by combining clear explanations, guided practice, and engaging interactive activities to make learning enjoyable and effective.
+             </p>
               <p className="overview-description">
-                It is designed to make learners comfortable with English through simple explanations, guided practice, and interactive activities.
-This course builds a strong foundation and prepares learners to move confidently into regular spoken English practice.
-              </p>
+ Whether you prefer personalized attention or the energy of group learning, Basic English helps you build confidence, improve communication skills, and start speaking English from day one.
+It provides a strong foundation for learners to develop confidence in spoken English.             </p>
             </div>
             <div className="who-for-card">
-              <h3 className="who-for-title">Who This Course Is For</h3>
+              <h3 className="who-for-title">Who Should Enroll</h3>
               <ul className="who-for-list">
                 <li>
                   <span className="material-symbols-outlined">circle</span>
-                  <span>Absolute beginners who want to start learning English.</span>
+                  <span>Perfect for absolute beginners ready to take their first step into the world of English.</span>
                 </li>
                 <li>
                   <span className="material-symbols-outlined">circle</span>
-                  <span>Learners who know very little English and need step-by-step guidance.</span>
+                  <span>Designed for learners who want simple, guided steps to build their English from the basics.</span>
                 </li>
                 <li>
                   <span className="material-symbols-outlined">circle</span>
-                  <span>People who want to build basic speaking confidence in a short time.</span>
+                  <span>Ideal for those who want to quickly develop confidence in speaking English.</span>
                 </li>
                   <li>
                   <span className="material-symbols-outlined">circle</span>
-                  <span>Anyone looking for a simple and supportive introduction to spoken English.</span>
+                  <span>A welcoming starting point for anyone new to spoken English.</span>
                 </li>
               </ul>
             </div>
@@ -186,8 +215,7 @@ This course builds a strong foundation and prepares learners to move confidently
                 </div>
                 <h3 className="training-title">One-to-One Training</h3>
                 <p className="training-description">
-                  A personalized, high-intensity experience tailored to your specific pace and goals. Direct editorial guidance for those seeking rapid refinement.
-                </p>
+             Personalized training focused on your pace and goals, with clear guidance to help you improve and build confidence.   </p>
                 <div className="training-tag">
                   <span>Deep Focus</span>
                   <span className="tag-line"></span>
@@ -199,8 +227,7 @@ This course builds a strong foundation and prepares learners to move confidently
                 </div>
                 <h3 className="training-title">Group Training</h3>
                 <p className="training-description">
-                  Collaborative learning in small, curated cohorts. Engage in dynamic editorial discussions that mirror the rhythm of real-world discourse.
-                </p>
+             Learn in a small group through guided activities and discussions. Practice speaking, share ideas, and build confidence together.   </p>
                 <div className="training-tag">
                   <span>Collaborative Atelier</span>
                   <span className="tag-line"></span>
@@ -210,72 +237,91 @@ This course builds a strong foundation and prepares learners to move confidently
           </section>
 
           {/* Topics Covered */}
-          <section className="topics-section">
-            <h2 className="section-title">Topics Covered</h2>
-            <div className="topics-grid">
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">abc</span>
-                </div>
-                <h4 className="topic-title"> Basic English Words </h4>
-                <p className="topic-description">Master the English alphabet and the essential sounds that form the basis of clear pronunciation.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">edit</span>
-                </div>
-                <h4 className="topic-title">Games on Grammar</h4>
-                <p className="topic-description">Understanding the 'To Be' verb, basic sentence structures, and present simple tense.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">person</span>
-                </div>
-                <h4 className="topic-title"> Expressions and Idioms</h4>
-                <p className="topic-description">How to introduce yourself, describe your background, and share personal interests elegantly.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">schedule</span>
-                </div>
-                <h4 className="topic-title">Conversational English</h4>
-                <p className="topic-description">Vocabulary for time, days, and common daily routines to navigate everyday life.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">shopping_basket</span>
-                </div>
-                <h4 className="topic-title">Games and Expressions</h4>
-                <p className="topic-description">Navigating markets, cafes, and transportation with confidence and courtesy.</p>
-              </div>
-              <div className="topic-card">
-                <div className="topic-icon-wrapper">
-                  <span className="material-symbols-outlined">explore</span>
-                </div>
-                <h4 className="topic-title">Communicative English</h4>
-                <p className="topic-description">Prepositions of place and giving/receiving basic directions in a city environment.</p>
-              </div>
-            </div>
-          </section>
+         <section className="topics-section">
+  <h2 className="section-title">Topics Covered</h2>
+  <div className="topics-grid">
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">abc</span>
+      </div>
+      <h4 className="topic-title">English Vocabularies</h4>
+      <p className="topic-description">
+        Build a strong foundation with essential everyday words to help you understand, speak, and communicate in English with confidence.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">sports_esports</span>
+      </div>
+      <h4 className="topic-title">Games on Grammar</h4>
+      <p className="topic-description">
+        Learn essential grammar through fun and interactive activities, helping you build simple sentences and improve your speaking confidence.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">auto_awesome</span>
+      </div>
+      <h4 className="topic-title">Expressions and Idioms</h4>
+      <p className="topic-description">
+        Enhance your speaking with simple expressions and idioms that make your English sound more fluent and engaging.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">forum</span>
+      </div>
+      <h4 className="topic-title">Conversational English</h4>
+      <p className="topic-description">
+        Develop the confidence to engage in daily conversations using clear and effective English.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">sports_esports</span>
+      </div>
+      <h4 className="topic-title">Games and Expressions</h4>
+      <p className="topic-description">
+        Practice useful expressions through interactive games to improve your speaking skill.
+      </p>
+    </div>
+    
+    <div className="topic-card">
+      <div className="topic-icon-wrapper">
+        <span className="material-symbols-outlined">record_voice_over</span>
+      </div>
+      <h4 className="topic-title">Communicative English</h4>
+      <p className="topic-description">
+        Strengthen your ability to express yourself clearly and comfortably in daily interactions.
+      </p>
+    </div>
+  </div>
+</section>
 
           {/* Course Outcome */}
           <section className="outcome-section">
             <div className="outcome-wrapper">
               <div className="outcome-content">
                 <div className="outcome-text">
-                  <h2 className="outcome-title">The Outcome</h2>
+                  <h2 className="outcome-title">THE FINAL GOAL</h2>
                   <p className="outcome-description">
-                    Upon completion, you won't just "know" English words; you will possess the structural framework to hold simple conversations, read basic news reports, and—most importantly—have the confidence to progress to intermediate mastery.
+                   
+By the end of the course, you will be able to use simple English in everyday situations and speak with greater ease and confidence.
+
                   </p>
                   <div className="outcome-badges">
                     <div className="badge">
                       <span className="material-symbols-outlined">verified</span>
-                      <span>CEFR A1 Mastery</span>
+                      <span>Real-World Ready</span>
                     </div>
-                    <div className="badge">
+                    {/* <div className="badge">
                       <span className="material-symbols-outlined">verified</span>
                       <span>Editorial Certificate</span>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="outcome-image">
@@ -288,19 +334,71 @@ This course builds a strong foundation and prepares learners to move confidently
       </div>
 
       {/* Footer */}
-      <footer className="course-footer">
-        <div className="footer-content">
-          <div>
-            <div className="footer-logo">Linguist Editorial</div>
-            <p className="footer-copyright">© 2024 Linguist Editorial. Focus on Fluency.</p>
-          </div>
-          <div className="footer-links">
-            <a href="#">Academic Integrity</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Excellence</a>
-          </div>
-        </div>
-      </footer>
+    <footer className="course-footer">
+  <div className="footer-content">
+
+    {/* LEFT SIDE */}
+    <div className="footer-left">
+      <div className="footer-logo">Linguist Editorial</div>
+      <p className="footer-copyright">
+        © 2024 Linguist Editorial. Focus on Fluency.
+      </p>
+
+      {/* 📞 Phone */}
+      <div className="footer-contact">
+        <Phone size={16} />
+        <span>+91 9544830199</span>
+      </div>
+    </div>
+
+    {/* CENTER - SOCIAL */}
+    <div className="footer-social">
+      <a
+        href="https://wa.me/919544830199"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon whatsapp"
+      >
+        <MessageCircle size={18} />
+      </a>
+
+      <a
+        href="https://instagram.com/enito"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon instagram"
+      >
+        <Instagram size={18} />
+      </a>
+
+      <a
+        href="https://facebook.com/enito"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon facebook"
+      >
+        <Facebook size={18} />
+      </a>
+
+      <a
+        href="https://twitter.com/enito"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-icon twitter"
+      >
+        <Twitter size={18} />
+      </a>
+    </div>
+
+    {/* RIGHT SIDE */}
+    <div className="footer-links">
+      <a href="#">Academic Integrity</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Excellence</a>
+    </div>
+
+  </div>
+</footer>
     </div>
   );
 };
