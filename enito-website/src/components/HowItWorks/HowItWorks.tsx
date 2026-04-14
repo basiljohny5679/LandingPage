@@ -29,7 +29,7 @@ const HowItWorks: React.FC = () => {
     <p>Get updates, practice tips, and connect with learners daily.</p>
 
     <a
-      href="https://wa.me/919544830199"
+      href="https://chat.whatsapp.com/Ii8ymQVh9SECjCrCZDPfqk"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-btn"

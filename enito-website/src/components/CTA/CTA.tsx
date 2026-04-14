@@ -1,31 +1,44 @@
 import React from 'react';
-import { Phone, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Phone, MessageCircle, Instagram, Facebook } from 'lucide-react';
+
 import './CTA.css';
+
+const XLogo = ({ size = 22 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
 
 const CTA: React.FC = () => {
   const socialLinks = [
     {
       name: "Instagram",
-      url: "https://instagram.com/enito",
+      url: "https://www.instagram.com/enito_english?igsh=MWJ4NHRnOGZuamE4cA==",
       icon: <Instagram size={22} />,
       class: "instagram"
     },
     {
       name: "Facebook",
-      url: "https://facebook.com/enito",
+      url: "https://www.facebook.com/share/1FiFHKe1E2/",
       icon: <Facebook size={22} />,
       class: "facebook"
     },
     {
-      name: "Twitter",
-      url: "https://twitter.com/enito",
-      icon: <Twitter size={22} />,
+      name: "X (Twitter)",
+      url: "https://x.com/EnitoEnglish",
+      icon: <XLogo size={22} />,
       class: "twitter"
     }
   ];
 
-  const phoneNumber = "+919544830199";
-  const whatsappNumber = "919544830199";
+  const phoneNumber = "+919496687327";
+  const whatsappNumber = "919496687327";
 
   return (
     <section className="cta-section">
@@ -47,7 +60,7 @@ const CTA: React.FC = () => {
               <div className="contact-methods">
                 <a href={`tel:${phoneNumber}`} className="contact-method">
                   <Phone size={16} />
-                  +91 9544830199
+                  +91 9496687327
                 </a>
                 <a 
                   href={`https://wa.me/${whatsappNumber}?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English`} 
@@ -88,7 +101,6 @@ const CTA: React.FC = () => {
             <div className="footer-links">
               <a href="/terms" className="footer-link">Terms & Conditions</a>
               <a href="/privacy" className="footer-link">Privacy Policy</a>
-             
               <a href="/faq" className="footer-link">FAQ</a>
             </div>
           </div>

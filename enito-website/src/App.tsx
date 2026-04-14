@@ -41,7 +41,7 @@ function App() {
 
           {/* ✅ Keep route naming consistent */}
           <Route path="/course/basic-english" element={<BasicEnglish />} />
-          <Route path="/course/daily-communication" element={<DailyCommunication />} />
+          <Route path="/course/daily-english" element={<DailyCommunication />} />
           <Route path="/course/interview-cracker" element={<InterviewPreparation />} />
         </Routes>
       </div>

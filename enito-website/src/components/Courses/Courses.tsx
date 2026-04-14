@@ -28,8 +28,8 @@ const Courses: React.FC = () => {
       topics: ["Alphabet & Pronunciation", "Basic Grammar", "Common Phrases", "Simple Conversations", "Vocabulary Building"]
     },
     {
-      id: "daily-communication",
-      title: "Daily Communication",
+      id: "daily-english",
+      title: "Daily English",
       description: "Practical English for Daily Use",
       image: "https://plus.unsplash.com/premium_photo-1663051303500-c85bef3f05f6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGVvcGxlJTIwdGFsa2luZ3xlbnwwfHwwfHx8MA%3D%3D",
       fullDescription: "Master everyday English conversations for various situations. Improve your speaking and listening skills for real-world interactions.",

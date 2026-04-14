@@ -11,7 +11,7 @@
     gap: 2rem;
 }
 
-
+/* ✅ CARD FIXED */
 .value-card {
     position: relative;
     padding: 3rem 2rem 2rem;
@@ -20,18 +20,21 @@
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
 
-    text-align: center;
+    text-align: left; /* 🔥 important */
     transition: all 0.3s ease;
     
     border: 1px solid rgba(255,255,255,0.3);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-   
+
+    display: flex;
+    flex-direction: column;
 }
 
 .value-card:hover {
     box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
 
+/* ICON */
 .icon-box {
     position: absolute;
     top: -35px;
@@ -50,10 +53,6 @@
     z-index: 2;
 }
 
-
-
-
-
 .icon-orange {
     background: linear-gradient(135deg, #fb923c, #f97316);
     color: white;
@@ -69,19 +68,45 @@
     color: white;
 }
 
+/* TEXT */
 .value-title {
     font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
     color: #1f2937;
+    text-align: center;
 }
 
 .value-desc {
     color: #6b7280;
     font-size: 0.95rem;
     line-height: 1.6;
+
+    flex-grow: 1; /* 🔥 pushes button down */
+    text-align: center;
 }
 
+/* ✅ READ MORE FIXED */
+.read-more-btn {
+    margin-top: auto;          /* 🔥 push to bottom */
+    align-self: flex-end;      /* 🔥 move to right */
+    
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.7rem;
+
+    width: fit-content;        /* 🔥 prevent full width */
+    display: inline-flex;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}
+
+/* WAVE */
 .wave2-divider-bottom {
     position: absolute;
     bottom: 0;
@@ -90,8 +115,8 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    
 }
+
 .wave2-divider-bottom svg {
     position: relative;
     display: block;
@@ -103,6 +128,7 @@
     fill: #FFFFFF;
 }
 
+/* ✅ MOBILE */
 @media (max-width: 768px) {
     .values-grid {
         grid-template-columns: 1fr;
@@ -112,31 +138,4 @@
     .value-card {
         padding: 2.5rem;
     }
-    
-
-   
-
-    /* Fade OUT */
-.fade-exit {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.fade-exit-active {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.4s ease;
-}
-
-/* Fade IN */
-.fade-enter {
-    opacity: 0;
-    transform: translateY(10px);
-}
-
-.fade-enter-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
 }

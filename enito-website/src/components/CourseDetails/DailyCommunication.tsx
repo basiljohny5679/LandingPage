@@ -4,35 +4,47 @@ import Logo from '../../assets/Logo1.png';
 import './DailyCommunication.css';
 import { Phone, MessageCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 
+
 const DailyCommunication: React.FC = () => {
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-   const socialLinks = [
-      {
-        name: "WhatsApp",
-        url: "https://wa.me/919544830199?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English",
-        icon: <MessageCircle size={22} />,
-        class: "whatsapp"
-      },
-      {
-        name: "Instagram",
-        url: "https://instagram.com/enito",
-        icon: <Instagram size={22} />,
-        class: "instagram"
-      },
-      {
-        name: "Facebook",
-        url: "https://facebook.com/enito",
-        icon: <Facebook size={22} />,
-        class: "facebook"
-      },
-      {
-        name: "Twitter",
-        url: "https://twitter.com/enito",
-        icon: <Twitter size={22} />,
-        class: "twitter"
-      }
-    ];
+  const XLogo = ({ size = 22 }: { size?: number }) => (
+  <svg 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </svg>
+);
+//    const socialLinks = [
+//       {
+//         name: "WhatsApp",
+//         url: "https://wa.me/919544830199?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20English",
+//         icon: <MessageCircle size={22} />,
+//         class: "whatsapp"
+//       },
+//       {
+//         name: "Instagram",
+//         url: "https://instagram.com/enito",
+//         icon: <Instagram size={22} />,
+//         class: "instagram"
+//       },
+//       {
+//         name: "Facebook",
+//         url: "https://facebook.com/enito",
+//         icon: <Facebook size={22} />,
+//         class: "facebook"
+//       },
+//     {
+//       name: "X (Twitter)",
+//       url: "https://twitter.com/enito",
+//       icon: <FaXTwitter size={22} />, // Updated icon component
+//       class: "twitter"
+// }
+//     ];
   
 
   const navigate = useNavigate();
@@ -60,10 +72,20 @@ const DailyCommunication: React.FC = () => {
     navigate('/');
   };
 
+ const whatsappNumber = "919496687327";
+
   const handleBeginJourney = () => {
-    // Add your begin journey logic here
-    console.log('Begin Journey clicked');
+     const message = "Hello ENITO, I'm interested in learning Daily English";
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open in new tab
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
+
+   const handlePhoneCalls = () => {
+    window.location.href = 'tel:+919496687327';
+  };
+ 
 
   return (
     <div className="daily-communication-page">
@@ -86,7 +108,7 @@ const DailyCommunication: React.FC = () => {
           
           {/* Desktop Navigation Links */}
           <div className="nav-links">
-            <button className="nav-link-btn">Daily Communication</button>
+            <button className="nav-link-btn">Daily English</button>
             <button className="nav-link-btn">30 Days</button>
             <button className="nav-link-begin" onClick={handleBeginJourney}>Begin Journey →</button>
           </div>
@@ -122,7 +144,7 @@ const DailyCommunication: React.FC = () => {
               <span className="material-symbols-outlined">menu_book</span>
               Basic English
             </Link>
-               <Link to="/course/daily-communication" className="nav-item active" onClick={closeSideNav}>
+               <Link to="/course/daily-english" className="nav-item active" onClick={closeSideNav}>
               <span className="material-symbols-outlined">chat</span>
               Daily English
             </Link>
@@ -359,20 +381,20 @@ const DailyCommunication: React.FC = () => {
           <div className="footer-left">
             <div className="footer-logo">Linguist Editorial</div>
             <p className="footer-copyright">
-              © 2024 Linguist Editorial. Focus on Fluency.
+              © 2026 Linguist Editorial. Focus on Fluency.
             </p>
       
             {/* 📞 Phone */}
-            <div className="footer-contact">
-              <Phone size={16} />
-              <span>+91 9544830199</span>
-            </div>
-          </div>
+           <div className="footer-contact" onClick={handlePhoneCalls} style={{ cursor: 'pointer' }}>
+                        <Phone size={16} />
+                        <span>+91 9496687327</span>
+                      </div>
+                    </div>
       
           {/* CENTER - SOCIAL */}
           <div className="footer-social">
             <a
-              href="https://wa.me/919544830199"
+              href={`https://wa.me/${whatsappNumber}?text=Hello%20ENITO%2C%20I'm%20interested%20in%20learning%20Daily%20English`}
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon whatsapp"
@@ -381,7 +403,7 @@ const DailyCommunication: React.FC = () => {
             </a>
       
             <a
-              href="https://instagram.com/enito"
+              href="https://www.instagram.com/enito_english?igsh=MWJ4NHRnOGZuamE4cA=="
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon instagram"
@@ -390,7 +412,7 @@ const DailyCommunication: React.FC = () => {
             </a>
       
             <a
-              href="https://facebook.com/enito"
+              href="https://www.facebook.com/share/1FiFHKe1E2/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon facebook"
@@ -399,12 +421,12 @@ const DailyCommunication: React.FC = () => {
             </a>
       
             <a
-              href="https://twitter.com/enito"
+              href="https://x.com/EnitoEnglish"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon twitter"
             >
-              <Twitter size={18} />
+                <XLogo size={18} />
             </a>
           </div>
       
