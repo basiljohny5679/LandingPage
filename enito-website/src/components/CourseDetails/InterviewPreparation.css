@@ -234,9 +234,25 @@
   .interview-preparation-page .logo-text {
     font-size: 1.125rem;
   }
+  .interview-preparation-page .home-btn {
+    width: 35px;
+    height: 35px;
+
+    min-width: 35px; 
+    min-height: 35px;
+
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    flex-shrink: 0;
+  }
   
   .interview-preparation-page .home-btn .material-symbols-outlined {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   
   .interview-preparation-page .menu-toggle .material-symbols-outlined {

@@ -253,7 +253,7 @@
   }
   
   .daily-communication-page .home-btn .material-symbols-outlined {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   
   .daily-communication-page .menu-toggle .material-symbols-outlined {
@@ -1664,9 +1664,25 @@
   .daily-communication-page .logo-icon {
     font-size: 1.25rem;
   }
+  .daily-communication-page .home-btn {
+    width: 35px;
+    height: 35px;
+
+    min-width: 35px; 
+    min-height: 35px;
+
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    flex-shrink: 0;
+  }
   
   .daily-communication-page .home-btn .material-symbols-outlined {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   
   .daily-communication-page .menu-toggle .material-symbols-outlined {

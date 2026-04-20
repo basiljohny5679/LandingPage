@@ -229,6 +229,24 @@
     height: 30px;
   }
 
+   .basic-english-page .home-btn {
+    width: 35px;
+    height: 35px;
+
+    min-width: 35px; 
+    min-height: 35px;
+
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    flex-shrink: 0;
+  }
+
+
   .basic-english-page .logo-text {
     font-size: 1.3rem;
   }
@@ -252,7 +270,8 @@
   }
   
   .basic-english-page .home-btn .material-symbols-outlined {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+      line-height: 1;
   }
   
   .basic-english-page .menu-toggle .material-symbols-outlined {
@@ -1662,7 +1681,7 @@
   }
   
   .basic-english-page .home-btn .material-symbols-outlined {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   
   .basic-english-page .menu-toggle .material-symbols-outlined {
